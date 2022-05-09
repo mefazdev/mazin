@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazin pest control</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+
+  <!-- Latest compiled JavaScript -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <style>
+   html {
+  scroll-behavior: smooth;
+}
+ </style>
+</head>
+
+
+<body>
+
+  <!--<<<<<<<< whatsappp popup >>>>>>>>>> -->
+  <a href="whatsapp://send?phone=+971 521630093" data-action="share/whatsapp/share"  class="float"  >
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  
+  <!-- CSS -->
+  <style>
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+  
+  .my-float{
+    margin-top:16px;
+
+  }
+
+  @media screen and (max-width: 568px) {
+    .float{
+   
+    width:50px;
+    height:50px;
+    bottom:40px;
+    right:40px;
+    text-align:center;
+    font-size:30px;
+  
+    z-index:100;
+  }
+  
+  .my-float{
+    margin-top:11px;
+
+  }
+}
+</style>
+
+
+
+ <!--------- navbar section ----------->
+    <section>
+     <div>
+      <div id="navbar__black__top">
+        <p data-toggle="modal" data-target="#form__model">Get Your Free Quote Now!</p>
+        <div id="navbar__black__top__icon__div">
+        
+            <a href="whatsapp://send?phone=+971 521630093" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" > </i></a> 
+           
+            
+         
+        
+         <i class="fa fa-envelope-open-o"  data-toggle="modal" data-target="#form__model"></i>
+          <span class="tooltip__mail" >info@mazinpestcontrol.com</span>
+     
+        
+        </div>
+      
+      </div>
+
+      <div id='home__navbar__section'>
+
+        <div class="row" id='home__navbar__section__first__row'>
+          <div id='home__navbar__section__first__row__left'>
+            <a style="text-decoration: none; margin: auto;" href="index.html">
+              <img class="col-12" src='assets\Logo\LOGO.png' id="logo" alt='logo' />
+            </a>
+            <a href="index.html"> <img class="col-12" id='mazin__font'
+                src='assets\Images\MAZIN PEST CONTROL& CLEANING SERVICES.png' alt='' /></a>
+          </div>
+
+          
+          <div id="nav__number" >
+          <span> <a href="tel:+971521630093"><img src="assets\icons\phone-call (3).svg"  alt=""></a></span>
+          <div id="nav__number__div">
+              <a href="tel:+971521630093" style="color: #FFF;">  <P>+971 521630093</P></a>
+          </div>
+          </div>
+          
+          
+        </div>
+        
+      
+        <div class="container-fluid" id='home__nav__items__row'>
+          <div class="row" id='home__nav__items__div'>
+            <a href="index.html" id="a__tag" class="col-4 col-md-2" style=" color: #232323; text-decoration: none;">
+              <h6>HOME</h6>
+            </a>
+            <a href="about.html" id="a__tag" class="col-4 col-md-3" style="text-decoration: none; color: inherit;">
+              <h6>ABOUT US</h6>
+            </a>
+            <a href="services.html" id="a__tag" class="col-4 col-md-2" style="text-decoration: none; color: inherit;">
+              <h6>SERVICES</h6>
+            </a>
+            <a href="gallery.html" id="a__tag" class="col-6 col-md-2" style="text-decoration: none; color: inherit;">
+              <h6>GALLERY</h6>
+            </a>
+            <a href="contact.html" id="a__tag" class="col-6 col-md-3" style="text-decoration: none; color: inherit;">
+              <h6>CONTACT US</h6>
+            </a>
+
+          </div>
+
+
+          <div type="button" data-target="#collapse__list" data-toggle="collapse" class="bar__container"
+            onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+          </div>
+
+          <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+          </script>
+</div></div>
+ </section>
+
+
+  <!-- BSNNER Carousel section -->
+  <section>
+
+
+    <div id='carousel__div' class="carousel slide" data-ride="carousel">
+
+      <div id="collapse__list" class="collapse bg-dark " style="float: initial; margin: auto; margin-top: -130px;">
+        <a href="index.html" style="text-decoration: none">
+          <h6 class="row" style="color: whitesmoke">HOME</h6>
+        </a>
+        <a href="about.html" style="text-decoration: none">
+          <h6 class="row">ABOUT US</h6>
+        </a>
+        <a href="services.html" style="text-decoration: none">
+          <h6 class="row">SERVICES</h6>
+        </a>
+        <a href="gallery.html" style="text-decoration: none">
+          <h6 class="row">GALLERY</h6>
+        </a>
+        <a href="contact.html" style="text-decoration: none">
+          <h6 class="row">CONTACT US</h6>
+        </a>
+      </div>
+
+      <ul class="carousel-indicators">
+        <li data-slide-to="0" class="active"></li>
+        <li data-slide-to="1"></li>
+        <li data-slide-to="2"></li>
+      </ul>
+
+
+      <div class="carousel-inner">
+        <!--  -->
+        <div  class="carousel-item active">
+          
+          <!-- </div> -->
+          <a href="tel:+971521630093"  >
+            <img data-target="#form__model" class="col-12" src="assets\Images\component1–1.png" alt="">
+          </a>
+         
+
+        </div>
+        <div class="carousel-item">
+          <a href="tel:+971521630093">
+            <img  data-target="#form__model" class="col-12" src="assets\Images\scroll2.png" alt="">
+          </a>
+         
+        </div>
+        <div class="carousel-item ">
+          <a href="tel:+971521630093"> <img  data-target="#form__model" class="col-12" src="assets\Images\scroll-3.png" alt=""></a>
+         
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  
+
+
+
+  <!-------- WORKING TIME BANNER  ------------>
+  <section>
+    <div  id='home__service__scroll'>
+   <h5  > <span>24/7  Services Available &nbsp  &nbsp  DUBAI | SHARJAH |  FUJAIRAH |  RAS AL KHAIMA  </span> </h5>
+ 
+    </div>
+  </section>
+
+
+
+
+  <!---------------  MAIN BANNER  ------------------->
+<section>
+  <div class="container" id="main__banner__container">
+<h1>Mazin pest control</h1>
+ 
+<h5>We Neutralize the Cause more than the cause.</h5>
+<div class="main__banner container">
+  <div class="row">
+    <div class="col-8  col-md-8 main__banner__left">
+      <div class="row main__banner__first__row">
+        <i class="fa fa-check-circle-o " style="font-size:24px"></i>
+      <p  >Trusted, Experienced, Dedicated</p>  
+      </div>
+      <h2>pest extermination <br> and control services</h2>
+      
+      <div class="row main__banner__button__row">
+        <a href="tel:+971521630093" class="">
+          <button class="btn  col-12  " id="main__banner__call__button">
+            CALL US : +971521630093
+           </button>
+        </a>
+        
+        <button data-toggle="modal" data-target="#form__model" class="btn col-12 col-md-4" id="main__banner__qoute__button">GET A FREE QUOTE</button>
+      </div>
+    </div>
+    <div class="col-4 col-md-4 main__banner__right">
+      <img src="./assets/Images/banner-img-2.png" />
+      <div class="main__banner__icon__div">
+        <a href="https://www.facebook.com/mazinpestcontrol/">
+          <i class="fa fa-facebook-f" ></i>
+        </a>
+        <a href="https://twitter.com/home">
+          <i class="fa fa-twitter" ></i> 
+        </a>
+         
+        <i class="fa fa-linkedin-square"></i>
+        <a href="https://www.instagram.com/mazin_pest_control/">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="whatsapp://send?phone=+971 521630093" data-action="share/whatsapp/share"  >
+          <i class="fa fa-whatsapp"></i>
+        </a>
+      
+        <a href="tel:+971521630093">
+          <i class="fa fa-phone"></i>
+        </a>
+ 
+       
+      </div>
+
+      
+     </div>
+    
+     <div class="main__banner__right__bottom">
+    <div class="main__banner__right ">
+       
+     <button data-toggle="modal" data-target="#form__model"  class="btn">Request a free Quote</button>
+    </div>
+       <div class="main__banner__right__round">
+        <i class="fa fa-id-card-o"></i>
+       </div>
+     </div>
+    </div>
+   
+ 
+  
+ 
+
+</div>
+  </div>
+</section>
+
+  <!-- Quick apply section -->
+  <section>
+    <div class="container">
+      <div id='home__quick__apply' class="row">
+
+        <div class="col-12 col-md-9 left-square" id='home__about__section' style="margin: auto;">
+        
+          <h2 class="col-12">EXPERIENCED & PROFESSIONAL <br> PEST CONTROL SERVICE</h2>
+          <img class="col-12" id='home__about__img' src="./assets/Images/about-us.png" alt='' />
+          <div id='home__about__content__text'>
+            <p class="col-12"><b>Mazin pest control </b> is the trusted, professional, dedicated pest control service providers in the
+              pest management industry and
+              specialised in a vast range of pest control and cleaning services. </p>
+              <p id="home__about__extra_content"  class="col-12 home__about__extra_content" >
+               
+We put forward end-to-end pest management services with cost-effective and Professional management and quality services to overcome all pest-related challenges. Mazin is a one-stop solution provider with its expertise and follows a unique methodology based on different pests providing flexible pre and post-construction Anti-termite treatment. We try our best to meet the client’s demands in every sense with the help of a colossal team of equipped and skilled technicians, service controllers, supervisors, service-operators and beck-end professionals committed to providing a reliable service
+. 
+              </p>
+            
+             
+            
+            
+          </div>
+          <button  id="home__about__read_more" class="home__about__read_more " >Read More</button>
+        
+        </div>
+
+        <div class="col-10 col-md-3 right-square " id='home__quick__apply__div'>
+          <div id='home__quick__apply__head'>
+            <P>QUICK APPLY</P>
+          </div>
+          <div id='home__quick__apply__form__div'>
+
+            <form>
+              <div id='home__quick__apply__form__input__div'>
+                <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input type="text" name="name" />
+              </div>
+              <div id='home__quick__apply__form__input__div'>
+                <label for="contact">Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input type="text" name="contact number" />
+              </div>
+              <div id='home__quick__apply__form__input__div'>
+                <label for="email">Email </label>
+                <input type="email" name="email" />
+              </div>
+              <div id='home__quick__apply__form__input__div'>
+                <label for="location">Location <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input type="text" name="locatio" />
+              </div>
+              <div id='home__quick__apply__form__input__div'>
+                <label for="service">Services </label>
+                <input list="select" name="services" id='services__input' />
+
+                <datalist class="form-control" id="select">
+                  <option value="RODENT CONTROL">
+                  <option value="TERMITE CONTROL">
+                  <option value="BUDBUG CONTROL">
+                  <option value="BIRDS CONTROL">
+                  <option value="INSECT CONTROL">
+                  <option value="ANT CONTROL">
+
+                  <option value="WASPS CONTROL">
+                  <option value="FUMIGATION">
+                  <option value="FLY CONTROL">
+                  <option value="COCKROACH CONTROL">
+
+
+
+                </datalist>
+
+              </div>
+
+
+
+
+          </div>
+          <div id="home__quick__button__div">
+            <button type="submit">SUBMIT</button>
+          </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- HOME SECURITY SECTION -->
+
+
+  <section>
+    <div class="container-fluid" id='home__security__section'>
+      <h2>YOUR SAFETY IS OUR TOP PRIORITY</h2>
+      <div class="row" id='home__security__row'>
+        <div class="col-6 col-lg-2" id='home__security__icon__div'>
+          <img class="col" id="home__security__row__img1" src='./assets/icons/group-12.png' alt='' />
+        </div>
+        <div class="col-6 col-lg-2" id='home__security__icon__div'>
+          <img class="col" id="home__security__row__img2" src="./assets/icons/group-13.png" alt='' />
+        </div>
+
+        <div class="col-6 col-lg-2" id='home__security__icon__div'><img id="home__security__row__img3" class="col "
+            src="./assets/icons/group-14.png" alt='' /></div>
+
+        <div class="col-6 col-lg-2" id='home__security__icon__div'><img id="home__security__row__img4" class="col"
+            src="./assets/icons/group-15.png" alt='' /></div>
+
+        <div class="col-12 col-lg-2" id='home__security__icon__div'><img id="home__security__row__img5" class="col"
+            src="./assets/icons/group-16.png" alt='' /></div>
+
+      </div>
+
+      <div class="row " id='home__security__text__row'>
+        <p class="col">
+          Mazin pest control company based out of fujairah UAE having license for doing pest control services  in sharjah UAE including   Kalba is a leader in the industry for a over a decade.we have completed thousands of projects in  residential buildings offices and commercial spaces .Based out of fujairah & Sharjah we are specialized in a variety of Pest Control Services like Bird Control, Termite Control, General Pest Control etc. Our Company is managed and manned by a group of versatile, well experienced and technically efficient staff. Mazin pestcontrol  approach to Pest management has always been the Urban IPM method which is an effective and environmentally sensitive approach to pest management that relies on a combination of common-sense practices based on years of experience. Our IPM programs use current, comprehensive information on the life cycles of pests and their interaction with the environment.
+
+          We are approved by Dubai,Fujairah, Sharjah municipalities in General Pest control, Bird Control, Termite control, Termite baiting, Fumigation, Rodent Control, Vessel fumigation, Container Fumigation, for residential, Industrial, Commercial premise
+
+          
+
+
+          
+        </p>
+        
+      </div>
+      <div class="row" id="home__security__text__arab">
+        
+        <p class="col">شركة مازن لمكافحة الآفات مقرها في الفجيرة الإمارات العربية المتحدة ولديها ترخيص للقيام بخدمات مكافحة الآفات في الشارقة ، الإمارات العربية المتحدة بما في ذلك كلباء هي شركة رائدة في الصناعة لأكثر من عقد من الزمان ، وقد أكملنا الآلاف من المشاريع في المباني السكنية والمكاتب والمساحات التجارية. الفجيرة والشارقة نحن متخصصون في مجموعة متنوعة من خدمات مكافحة الآفات مثل مكافحة الطيور ، مكافحة النمل الأبيض ، مكافحة الآفات العامة وما إلى ذلك. تدار شركتنا وتديرها مجموعة من الموظفين متعددي الوظائف وذوي الخبرة والكفاءة الفنية. لطالما كان نهج مازن لمكافحة الآفات في إدارة الآفات هو أسلوب الإدارة المتكاملة للآفات في المناطق الحضرية وهو نهج فعال وحساس بيئيًا لإدارة الآفات يعتمد على مجموعة من الممارسات المنطقية القائمة على سنوات من الخبرة. تستخدم برامج المكافحة المتكاملة للآفات الخاصة بنا المعلومات الحالية والشاملة عن دورات حياة الآفات وتفاعلها مع البيئة
+
+        نحن معتمدون من قبل دبي ، الفجيرة ، بلديات الشارقة في مكافحة الآفات العامة ، مكافحة الطيور ، مكافحة النمل الأبيض ، اصطياد النمل الأبيض ، التبخير ، مكافحة القوارض ، تبخير السفن ، تبخير الحاويات ، للمباني السكنية
+        والصناعية والتجارية
+        </p>
+      </div>
+      
+
+    </div>
+  </section>
+
+
+  <!-- HOME SERVICE SECTION -->
+
+  <Section>
+    <div class="container" id='home__service__container'>
+      <img id='home__service__head__img' src='assets\Images\Our Services.png' alt='' />
+      <h2 class="col-12" id="home__service__head">OUR SERVICES</h2>
+
+      <div class="row " id='home__service__first__Row'>
+        <div class="col-6 col-md-4 col-lg-3  " id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="rodent.html">
+            <!-- <div class="service__img__div"> -->
+              <img class="col-10" src='./assets/Images/services/rodent.jpg' alt='Rodent control' />
+            <!-- </div> -->
+           
+
+            <h6>RODENT CONTROL TREATMENT</h6>
+           <div class="home__service__desc">
+            <li>Baiting & Tapping</li>
+            <li>New balt stations</li>
+            <li>Routine inspections</li>
+           </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 " id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="termite.html">
+            <img class="col-10" src='./assets/Images/services/termite.jpg' alt='TermitE control' />
+
+            <h6>ANTI TERMITE TREATMENT</h6>
+            <div class="home__service__desc">
+              <li>5-10 Years guaranteed</li>
+              <li>Yearly inspection</li>
+              <li>Pre & post constructional <br> treatments</li>
+            </div>
+          </a>
+
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="bedbug.html">
+            <img class="col-10" src='./assets/Images/services/bedbug.jpg' alt='bedbung control' />
+
+            <h6>BED BUG EXTERMINATION</h6>
+            <div class="home__service__desc">
+              <li>New steam technology</li>
+            <li>With/without pesticides</li>
+            <li>Service ineterval 3 weeks</li>
+            </div>
+          </a>
+        </div>
+
+        <!-- <div class="col-6 col-md-4 col-lg-2" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="bird.html">
+         
+            <div>   <img class="col-10" src='./assets/Images/services/bird.jpg' alt='bedbung control' /></div>
+
+            <h6>BIRDS CONTROL</h6>
+            <div class="home__service__desc">
+              
+            </div>
+          </a>
+        </div> -->
+        
+ <!-- <div class="col-6 col-md-4  col-lg-2" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="insects.html">
+            <img class="col-10" src='./assets/Images/services/insects.jpg' alt='insect control' />
+
+            <h6>INSECTS CONTROL</h6>
+            <div class="home__service__desc">
+              
+            </div>
+          </a>
+        </div> -->
+
+      <!-- </div> -->
+      <!-- <div class="row" id="home__service__second__row"> -->
+       
+
+
+
+        <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="ant.html">
+            <img class="col-10" src='./assets/Images/services/ant.jpg' alt=' ant control' />
+
+            <h6>ANT CONTROL TREATMENT</h6>
+            <div class="home__service__desc">
+              <li>Nest management</li>
+            <li>Interior / Exterior</li>
+            <li>Baiting</li>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="wasps.html">
+            <img class="col-10" src='./assets/Images/services/wasps.jpg' alt='waps control' />
+
+            <h6>WASPS CONTROL</h6>
+            <div class="home__service__desc">
+              
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="fumigation.html">
+            <img class="col-10" src='./assets/Images/services/fumigation.jpg' alt=' fumiagtion' />
+
+
+            <h6>FUMIGATION</h6>
+            <div class="home__service__desc">
+              
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="fly__control.html">
+            <img class="col-10" src='./assets/Images/services/fly.jpg' alt=' fly control' />
+
+
+            <h6>FLY CONTROL</h6>
+            <div class="home__service__desc">
+              
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
+          <a style="text-decoration: none; color: inherit;" href="cockroach.html">
+            <img class="col-10" src='./assets/Images/services/cockroach.jpg' alt='cockaroach control' />
+
+            <h6>COCKROACH CONTROL TREATMENT</h6>
+            <div class="home__service__desc">
+              <li>Year long protection</li>
+              <li>One time service &</li>
+              <li>Affordable packages</li>
+            </div>
+          </a>
+        </div>
+     
+        <div class="home__service__more">
+          <a href="services.html">
+<button class="btn">View more <i class="fa fa-long-arrow-right"></i></button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+
+  <!-- HOME SANITAISATION SECTION -->
+
+  <section>
+    <div class="container" id='home__sanit__container'>
+
+      <h2 class="col-12">SANITAIZATION AND DISINFECTION SERVICES </h2>
+      <div class="row" id='home__sanit__row'>
+        <div class="col-11  order-2  order-lg-1 col-md-12  col-lg-6  sanit-left-square" id='home__sanit__text__div'>
+          <p >
+            In this pandemic season of COVID-19, people are more aware
+            and imperative to understand the importance of
+            sanitization and disinfection looks for perfect
+            disinfection and sanitization service providers.
+            Mazin will be the ultra-perfect solution for this
+            need. We use WHO certified chemicals and provide
+            high-quality disinfection and sanitization services for residential,
+            commercial, industrial areas at affordable prices. You can keep your asset free from all communicable
+            diseases,
+            by this process of disinfection and sanitization and we can guarantee to impede the virus entry and be extra
+            careful.<br />  </p>
+            <p  id='sani__extra__text'>
+            <b style="font-weight: 700;"> We provide sanitization and disinfection services at  
+              <span>|</span> Home <span>|</span> Offices <span>|</span> Hospitals <span>|</span> Hypermarkets
+              <span>|</span> Warehouse <span>|</span> Restaurants <span>|</span> Vehicles.   </b> <br />
+          
+             The disinfection and sanitization processes done by Mazin professionals thoroughly disinfect your
+            home and business. We use EPA registered chemicals and procedures and kill 99.999% of bacteria and viruses.
+            Our process is completed within minimal downtime and completely harmless to humans and pets.<br />
+            Our professional sanitizing and disinfection services are the effective solution to quickly disinfect your
+            premises and ensure
+            a safe environment for our family members and employees. 
+          </p>
+          <button  id="sani__read__more__button" class="sani__read__more__button " >Read More</button>
+        </div>
+        <div class="col-12 order-1 order-lg-2 col-md-12 col-lg-6 sanit-right-square" id='home__sani__img__div'>
+          <img
+          src="./assets/Images/man-virus.png"
+            alt="sanitaization" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME SHEDULE SECTION -->
+
+  <section id='homeSE'>
+    <div class="container-fluid popup" id='home__schedule__container'>
+      <h1 class="col-12">SCHEDULE YOUR TIME NOW !</h1>
+
+<button data-toggle="modal" data-target="#form__model" type="button" class="btn">SEND REQUEST</button>
+
+
+
+     
+
+
+
+
+
+      <div class="row" id='home__schedule__Row'>
+        <div class="col" id='home__schedule__img__div'>
+          <span>
+            <img src='assets\Images\Speciality-01.png' alt='' />
+          </span>
+          <h5 class="col">Online Booking</h5>
+          <p class="col">Providing Easy Online <br /> And Offline Booking </p>
+        </div>
+        <div class="col" id='home__schedule__img__div'>
+          <span>
+            <img src='assets\Images\Speciality-02.png' alt='' />
+          </span>
+          <h5 class="col">Certified Team</h5>
+          <p class="col">Authority Certified Team <br /> For The Best Result</p>
+        </div>
+        <div class="col" id='home__schedule__img__div'>
+          <span>
+            <img src='assets\Images\Speciality-03.png' alt='' />
+          </span>
+          <h5 class="col">Best Products</h5>
+          <p class="col">High Branded Quality <br /> Certified Products</p>
+        </div>
+        <div class="col" id='home__schedule__img__div'>
+          <span>
+            <img src='assets\Images\Speciality-04.png' alt='' />
+          </span>
+          <h5>Easy Payments</h5>
+          <p>Providing Online And Offline <br /> Paymnets System</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- HOME GALLERY -->
+  <section>
+
+    <div class="container" id="home__gallery">
+      <h2 id="home__gallery__h1" class="col-12">GALLERY</h2>
+
+
+      <div class="row" id='home__gallery__row'>
+
+        <img class="col-11 col-md-6  col-lg-4  "
+         src="./assets/Images/gallery-1.png"
+          alt=''> </img>
+        <!-- <i class="fa fa-heart-o" style="font-size:48px;color:red"></i> -->
+
+
+        <img class="col-11 col-md-6 col-lg-4 "
+        src="./assets/Images/gallery-2.png"
+          alt='' />
+        <img class="col-11  col-md-6  col-lg-4 " 
+        src="./assets/Images/gallery-3.png"
+        
+        alt='' />
+
+      </div>
+      <div class="row" id='home__gallery__row'>
+        <img class="col-11 col-md-6 col-lg-4  "
+        src="./assets/Images/gallery-4.png"
+          alt='' />
+        <img class="col-11 col-md-6 col-lg-4  "
+        src="./assets/Images/gallery-5.png"
+          alt='' />
+        <img class="col-11 col-md-6 col-lg-4  "
+        src="./assets/Images/gallery-6.png"
+          alt='' />
+      </div>
+
+
+      <div class="row" id='home__gallery__row'>
+        <img class="col-11 col-md-6 col-lg-4  "
+        src="./assets/Images/gallery-7.png"
+          alt='' />
+        <img class="col-11 col-md-6 col-lg-4  "
+        src="./assets/Images/gallery-8.png"
+          alt='' />
+        <img class="col-11 col-md-6 col-lg-4  "
+         
+        src="./assets/Images/gallery-9.png"     
+        alt='' />
+      </div>
+
+
+      <a href="gallery.html"> <button type="button" class="btn">SEE MORE</button></a>
+    </div>
+
+
+
+  </section>
+
+
+  <!----- HOME TYPES SECTION ------>
+  <section>
+    <div class="container" id='home__types__container'>
+      <div class="row">
+
+
+        <div class="col-6 col-md-3 home__types1" id="home__types__img__div">
+          <img id='home__residential' src="./assets/Images/group-61.png" 
+          class="col" alt="Residential">
+          <h5 id='home__residential'>RESIDENTIAL</h5>
+          <div class="types__bars">
+            <div id="res-bar" class="types__bar__active"></div>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-6 col-md-3   home__types2" id="home__types__img__div">
+          <img id='home__commercial' src="./assets/Images/group-62.png" class="col" alt="">
+          <h5 id='home__commercial'>COMMERCIAL</h5>
+          <div class="types__bars">
+            <div id="comm-bar" class="types__bar"></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3  home__types3" id="home__types__img__div">
+          <img id='home__industrial' src="./assets/Images/group--63.png" class="col" alt="industrial">
+          <h5 id='home__industrial'>INDUSTRIAL</h5>
+          <div class="types__bars">
+            <div id="indust-bar" class="types__bar"></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3  home__types4" id="home__types__img__div">
+          <img id='home__institutional' src="./assets/Images/group-64.png" class="col" alt="">
+          <h5 id='home__institutional'>INSTITUTIONAL</h5>
+          <div class="types__bars">
+            <div id="inst-bar" class="types__bar"></div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row" id='types__row'>
+        <p id='home__types__text' class="col-11 col-md-12 col-lg-11" style="margin: auto; margin-top: 40px;">When the pests are
+          in; effective pest control, Mazin is the only solution,
+          because pests can damage your property and cause health problems. We eliminate the existing ones and advice
+          the proper measures to prevent future infestations. </p>
+         
+          <p id="types__extra__content" class="col-11 col-md-12 col-lg-11  types__extra__content" >
+          Mazin pest control offers effective, safe and reliable home pest control solutions to keep you away from the
+          hazards caused
+          by infectious pests. To safeguard your home from pest infestations we provide you with a team of highly
+          skilled exterminators having proven expertise.
+          We help you in dealing with any kind of pests at home, where you dwell with your loved ones.<br />
+
+          Our policy is to provide quality and customized residential pest control services to meet your individual
+          needs.
+          The first step to effective pest control is to limit reproduction and 100% satisfaction is guaranteed. We
+          identify the pest problems together with their hideouts and food sources and recommend corrective and
+          preventive measures.<br />
+
+          Our chemical treatments do not harm any living and non-living organisms. Dealing with household pests is
+          usually
+          a separate service other than dealing with the companies. Mazin pest control company adopt integrated natural
+          insect
+          repellants and many chemical-free techniques for exterior webs and insect entry points. <br />
+
+          We always choose a safe and effective approach with WHO verified odourless chemicals, doing it without making
+          any mess.
+          As pests are the carriers of diseases, we efficiently provide a dedicated service using alternative methods
+          depending on which is to be infested. Turn on to us for removing bed bugs, insects, cockroaches and all
+          similar ones to stop them from breeding and get an effective solution by our thorough personnel inspection,
+          ensuring eco-friendly and odourless first-class solutions. <br />
+
+          Mazin destroys the pests once and for all by providing a long-term solution without the need to vacate your
+          premises during
+          or after the treatment. Our staff understands and cares for your problem and works with you to eradicate your
+          pests,
+          tackling your problem safely, quickly, efficiently. Whatever be your problem, trust us to solve it.<br />
+      
+        </p>
+         
+        <button id="types__read__more__btn" class="types__read__more__btn">Read More</button>
+       
+      </div>
+      <button id="home__types__button" data-toggle="modal" data-target="#form__model">Get Residential Quote</button>
+    </div>
+  </section>
+
+  <!-- HOME EXPERIANCE SECTION -->
+  <section>
+    <div id='home__experience__section'>
+      <h2 class="cop-12">EXPERIENCED & PROFESSIONAL <br /> PEST CONTROL & CLEANING SERVICE IN UAE</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-10  order-2 col-lg-6 order-lg-1 " id="home__tags">
+            <div id='customers__tag' class="col ">
+              <h4 id='tag__text'> <b><span class="count">200 </span>+</b> SATISFIED CUSTOMERS</h4>
+            </div>
+
+            <div id='projects__tag' class="col">
+              <h4 id='tag__text'><b><span class="count">250 </span>+</b> PROJECTS COMPLETED</h4>
+            </div>
+
+            <div id='experience__tag' class="col">
+              <h4 id='tag__text'><b><span class="count">2 </span>+</b> YEARS EXPERIENCED</h4>
+            </div>
+
+            <div id='team_tag' class="col">
+              <h4 id='tag__text'><b><span class="count">25 </span>+</b> DEDICATED TEAM</h4>
+            </div>
+
+          
+              <button id="home__experience__button" type="button" class="btn col-12 col-md-9" data-toggle="modal" data-target="#form__model">
+                GET FREE ESTIMATE
+              </button>
+          
+
+          </div>
+          <div class="col-12 order-1 order-lg-2 col-lg-6 ">
+            <img class="col-12"
+            src="./assets/Images/kisspng.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- COUNTER -->
+  <script>
+    $(".count").counterUp({ time: 3000 });
+  </script>
+
+
+
+
+  <!------- HOME GET IN TOUCH ------->
+
+  <section>
+
+    <div class="container" id="home__getTouch__container">
+      <div id='home__getTouch__head'>
+        <h2>GET IN TOUCH</h2>
+      </div>
+      <div class="row" id='home__getTouch_row' style='max-width: 800px; margin: auto;'>
+        <div class="col-10 col-md-6  col-lg-7 order-2  order-md-1   getTouch-left-square" id='home__address__col'>
+          <h2>GET HELP FROM <br>OUR TEAM</h2>
+          <img class="col-8 col-md-6 " src="./assets/Images/contact-us.png" alt="">
+          <div id='home__adress__div'>
+            <h5>MAZIN PEST CONTROL</h5>
+            <h6>Shop No 3</h6>
+            <h6>Near Mirbah Police station</h6>
+            <h6>Qidfa, Fujairah</h6>
+            <h6>Phone : <b>+971 521630093</b></h6>
+            <h6>DUBAI | SHARJAH | UMM AL QUWAIN | FUJAIRAH <br />AJMAN| RA'S AL-KHAIMAH</h6>
+          </div>
+        </div>
+
+
+        <div class="col-10 col-md-5 col-lg-5  order-1  order-md-2  getTouch-right-square"
+          id='home__getTouch__form__div'>
+
+          <div id='home__getTouch__form'>
+
+            <form>
+              <div id='home__getTouch__form__input__div'>
+                <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input name="name" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input name="contact" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Email </label>
+                <input type="email" name="email" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Location <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input name="location" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Services </label>
+                <input list="select" name="services" id='services__input' />
+
+                <datalist class="form-control" id="select">
+                  <option value="RODENT CONTROL">
+                  <option value="TERMITE CONTROL">
+                  <option value="BUDBUG CONTROL">
+                  <option value="BIRDS CONTROL">
+                  <option value="INSECT CONTROL">
+                  <option value="ANT CONTROL">
+
+                  <option value="WASPS CONTROL">
+                  <option value="FUMIGATION">
+                  <option value="FLY CONTROL">
+                  <option value="COCKROACH CONTROL">
+
+
+
+                </datalist>
+
+              </div>
+
+              <div id="home__getTouch__button__div">
+
+                <button type="submit" id='submit__button'>SUBMIT</button>
+              </div>
+
+          </div>
+
+
+
+          </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!---- FOOTER  ------>
+
+  <section>
+    
+    <div id='footer' style="text-align: center;">
+
+      <a style="text-decoration: none;" href="#navbar__black__top"> <i class="fa fa-angle-double-up " id="footer__arrow"></i></a>
+
+ 
+      
+      <div id='footer__head'>
+       
+        <h2 class="col-12">CALL FOR QUICK RESPONSE</h2>
+
+        <div id='footer__no'>
+          <a href="tel:+971521630093" style="color: #FFF; text-decoration: none;">  <P>+971 521630093</P></a>
+        </div>
+
+      </div>
+      <div id='footer__icons'>
+        <span>
+          <a href="https://www.facebook.com/mazinpestcontrol/"><i class="fa fa-facebook-f" id='footer__icon'></i></a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/mazin_pest_control/"><i class="fa fa-instagram" id='footer__icon'></i></a>
+        </span>
+
+        <span>
+          <a href="https://twitter.com/home"><i class="fa fa-twitter" id='footer__icon'></i></a>
+        </span>
+
+
+
+      </div>
+      
+      <div class="row" style="max-width: 800px; color: #FFF;margin: auto;  ">
+        <p class="col-12"  style=" font:    13px/25px Poppins;">Privacy Policy | @2021, All Rights Reserved </p>
+      <a  href="https://www.cleverkings.com/" class="col-12"  style="color: #FFF;"> <p  style=" font:  14px/15px Poppins;">Developed by Cleverkings</p></a> 
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+ 
+
+
+
+
+<!-------------- HOME MODEL FORM -------------------->
+
+<!-- AUTO OPEN MODEL FUNCTION -->
+<script>
+  
+  setTimeout(function() {
+    // $('#form__model').modal();
+}, 15000);
+ </script>
+
+
+
+<!-- MODEL FORM  -->
+
+
+   <div class="modal fade " id="form__model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+   
+    <div class="modal-dialog" role="document">
+     
+      <div class="modal-content">
+        <div class="modal-header" >
+        <h4 style="font:  20px/40px Poppins; color: #20a25a;"> QUICK APPLY</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body " >
+      
+         <div class="col-9 col-md-8 col-lg-7  "
+          id='home__getTouch__form__div'>
+
+          <div id='home__getTouch__form'>
+
+            <form >
+              <div id='home__getTouch__form__input__div'>
+                <label for="name" style="margin-top: 20px;">Name <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input name="name" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input name="contact" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Email </label>
+                <input type="email" name="email" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Location <span style="color:rgba(255,0,0,1);">*</span></label>
+                <input name="location" />
+              </div>
+              <div id='home__getTouch__form__input__div'>
+                <label id='label for name'>Services </label>
+                <input list="select" name="services" id='services__input' />
+
+                <datalist class="form-control" id="select">
+                  <option value="RODENT CONTROL">
+                  <option value="TERMITE CONTROL">
+                  <option value="BUDBUG CONTROL">
+                  <option value="BIRDS CONTROL">
+                  <option value="INSECT CONTROL">
+                  <option value="ANT CONTROL">
+
+                  <option value="WASPS CONTROL">
+                  <option value="FUMIGATION">
+                  <option value="FLY CONTROL">
+                  <option value="COCKROACH CONTROL">
+
+
+
+                </datalist>
+
+              </div>
+
+              <div id="home__getTouch__button__div">
+
+                <button type="submit" id='submit__button'>SUBMIT</button>
+              </div>
+
+          </div>
+
+
+
+          </form>
+          </div> 
+        </div>
+      
+      </div>
+    </div>
+  
+
+</div>
+
+</body>
+
+
+
+
+
+
+<script src="jquary\script.js"></script>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+</html>
