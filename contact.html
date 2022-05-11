@@ -186,14 +186,14 @@
 
 
             <!--------  Form -------->
-            <form>
+            <form id='submit-forms'>
               <div id='home__getTouch__form__input__div'>
                 <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input type="text" name="name" />
+                <input type="text" name="name" required />
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label for="contact number">Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="contact number" />
+                <input name="phone" required />
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label for="email">Email </label>
@@ -201,11 +201,11 @@
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label for="location">Location <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input type="text" name="location" />
+                <input type="text" name="location"  required/>
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label for="services">Services </label>
-                <input list="services" name="services" id='services__input' />
+                <input list="services" name="service" id='services__input' />
 
                 <datalist class="form-control" id="services">
                   <option value="RODENT CONTROL">
@@ -241,7 +241,7 @@
 
       <div class="row" id="map_row">
      
-          <iframe class="col-11 col-lg-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.768346966965!2d56.36110644968217!3d25.27837701517557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef451fb37157387%3A0x314ab3674c1ed9cb!2sSajidha%20Electronics%20Trading!5e0!3m2!1sen!2sin!4v1627120557052!5m2!1sen!2sin" height="300" style="border: none; margin: auto; margin-top: 50px;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="col-11 col-lg-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.768346966965!2d56.36110644968217!3d25.27837701517557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef451fb37157387%3A0x314ab3674c1ed9cb!2sSajidha%20Electronics%20Trading!5e0!3m2!1sen!2sin!4v1627120557052!5m2!1sen!2sin" height="300" style="border: none; margin: auto; margin-top: 50px;" allowfullscreen="" loading="lazy"></iframe>
       
 
       </div>
@@ -292,15 +292,33 @@
   <!-- <script src="jquary\script.js"></script> -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+
+    <script>
+      $("#submit-forms").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa/exec",          data:$("#submit-forms").serialize(),
+              method:"post",
+              success:function (response){
+                  // alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+    
+              }
+          })
+      })
+    </script>
 </body>
 
 </html>

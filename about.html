@@ -223,12 +223,100 @@ Choosing Mazin pest control service is a righteous step toward protecting your h
 
 
 
+<!-- FORM MODAL -->
+
+
+<div class="modal fade" id="form__model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+   
+  <div class="modal-dialog" role="document">
+   
+    <div class="modal-content">
+      <div class="modal-header" >
+      <h4 style="font:  20px/40px Poppins; color: #20a25a;"> QUICK APPLY</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body " >
+    
+       <div class="col-9 col-md-8 col-lg-7  "
+        id='modal__form__div'>
+
+        <div id='home__getTouch__form'>
+
+         
+
+        <form id="submit-forms-modal">
+          <div id='modal__form__input__div'>
+            <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
+            <input required id="name"  type="text" name="name" />
+          </div>
+          <div id='modal__form__input__div'>
+            <label for="contact">Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
+            <input id="phone"   type="text" name="phone" />
+          </div>
+          <div id='modal__form__input__div'>
+            <label for="email">Email </label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div id='modal__form__input__div'>
+            <label for="location">Location <span style="color:rgba(255,0,0,1);">*</span></label>
+            <input   type="text" name="location" />
+          </div>
+          <div id='modal__form__input__div'>
+            <label for="service">Services </label>
+            <input itemid="service" list="select" name="service" id='services__input' />
+
+            <datalist class="form-control" id="select">
+              <option value="RODENT CONTROL">
+              <option value="TERMITE CONTROL">
+              <option value="BUDBUG CONTROL">
+              <option value="BIRDS CONTROL">
+              <option value="INSECT CONTROL">
+              <option value="ANT CONTROL">
+
+              <option value="WASPS CONTROL">
+              <option value="FUMIGATION">
+              <option value="FLY CONTROL">
+              <option value="COCKROACH CONTROL">
+          </datalist>
+        </div>
+          </div>
+      <div id="modal__button__div">
+        <button type="submit" >SUBMIT</button>
+      </div>
+
+    </form>
+        </div> 
+      </div>
+    
+    </div>
+  </div>
+
+
+</div> 
+<script>
+  $("#submit-forms-modal").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa/exec",          data:$("#submit-forms").serialize(),
+          method:"post",
+          success:function (response){
+              // alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+  
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

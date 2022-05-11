@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mazin pest control</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="styles.css">
-  <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
 
-  <!-- Latest compiled JavaScript -->
+   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -31,6 +32,8 @@
   scroll-behavior: smooth;
 }
  </style>
+
+
 </head>
 
 
@@ -344,26 +347,26 @@ We put forward end-to-end pest management services with cost-effective and Profe
           </div>
           <div id='home__quick__apply__form__div'>
 
-            <form>
+            <form id="submit-forms"   >
               <div id='home__quick__apply__form__input__div'>
                 <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input type="text" name="name" />
+                <input required id="name"  type="text" name="name" />
               </div>
               <div id='home__quick__apply__form__input__div'>
                 <label for="contact">Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input type="text" name="contact number" />
+                <input id="phone"   type="text" name="phone" />
               </div>
               <div id='home__quick__apply__form__input__div'>
                 <label for="email">Email </label>
-                <input type="email" name="email" />
+                <input id="email" type="email" name="email" />
               </div>
               <div id='home__quick__apply__form__input__div'>
                 <label for="location">Location <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input type="text" name="locatio" />
+                <input   type="text" name="location" />
               </div>
               <div id='home__quick__apply__form__input__div'>
                 <label for="service">Services </label>
-                <input list="select" name="services" id='services__input' />
+                <input itemid="service" list="select" name="service" id='services__input' />
 
                 <datalist class="form-control" id="select">
                   <option value="RODENT CONTROL">
@@ -377,29 +380,24 @@ We put forward end-to-end pest management services with cost-effective and Profe
                   <option value="FUMIGATION">
                   <option value="FLY CONTROL">
                   <option value="COCKROACH CONTROL">
-
-
-
-                </datalist>
-
+              </datalist>
+            </div>
               </div>
-
-
-
-
-          </div>
           <div id="home__quick__button__div">
-            <button type="submit">SUBMIT</button>
+            <button type="submit" >SUBMIT</button>
           </div>
 
+          <!-- https://script.google.com/macros/s/AKfycbx8ytmiFogTM9yY7Or7aE5jDN1aCU4oJWfv9E0OWylKrihy8_wH4Yjv8j4ZnHM_Kra8qg/exec -->
+          <!-- AKfycbx8ytmiFogTM9yY7Or7aE5jDN1aCU4oJWfv9E0OWylKrihy8_wH4Yjv8j4ZnHM_Kra8qg -->
+        </form>
+        
 
-          </form>
         </div>
       </div>
     </div>
 
   </section>
-
+  
 
 
   <!-- HOME SECURITY SECTION -->
@@ -551,7 +549,9 @@ We put forward end-to-end pest management services with cost-effective and Profe
 
             <h6>WASPS CONTROL</h6>
             <div class="home__service__desc">
-              
+              <li>Excellent range of services</li>
+              <li>Completely removes the  wasps</li>
+              <li>various equipments and sprayers </li>
             </div>
           </a>
         </div>
@@ -562,18 +562,22 @@ We put forward end-to-end pest management services with cost-effective and Profe
 
             <h6>FUMIGATION</h6>
             <div class="home__service__desc">
-              
+              <li>Well trained and <br> experienced manpower </li>
+              <li>24/7/365 Call Service</li>
+              <li>Effective results</li>
             </div>
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3" id='home__service__img__div'>
           <a style="text-decoration: none; color: inherit;" href="fly__control.html">
-            <img class="col-10" src='./assets/Images/services/fly.jpg' alt=' fly control' />
+            <img class="col-10" src='./assets/Images/services/bird.jpg' alt=' fly control' />
 
 
             <h6>FLY CONTROL</h6>
             <div class="home__service__desc">
-              
+              <li>Customized netting</li>
+              <li>Mechanical trapping</li>
+              <li>Ultrasonic Repellent</li>
             </div>
           </a>
         </div>
@@ -581,7 +585,7 @@ We put forward end-to-end pest management services with cost-effective and Profe
           <a style="text-decoration: none; color: inherit;" href="cockroach.html">
             <img class="col-10" src='./assets/Images/services/cockroach.jpg' alt='cockaroach control' />
 
-            <h6>COCKROACH CONTROL TREATMENT</h6>
+            <h6>COCKROACH CONTROL <br> TREATMENT</h6>
             <div class="home__service__desc">
               <li>Year long protection</li>
               <li>One time service &</li>
@@ -922,14 +926,14 @@ We put forward end-to-end pest management services with cost-effective and Profe
 
           <div id='home__getTouch__form'>
 
-            <form>
+            <form id="submit-forms-2">
               <div id='home__getTouch__form__input__div'>
                 <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="name" />
+                <input required name="name" id="name" />
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label id='label for name'>Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="contact" />
+                <input required name="phone" />
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label id='label for name'>Email </label>
@@ -937,11 +941,11 @@ We put forward end-to-end pest management services with cost-effective and Profe
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label id='label for name'>Location <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="location" />
+                <input required name="location" />
               </div>
               <div id='home__getTouch__form__input__div'>
                 <label id='label for name'>Services </label>
-                <input list="select" name="services" id='services__input' />
+                <input list="select"  name="service" id='services__input' />
 
                 <datalist class="form-control" id="select">
                   <option value="RODENT CONTROL">
@@ -1036,19 +1040,19 @@ We put forward end-to-end pest management services with cost-effective and Profe
 <!-------------- HOME MODEL FORM -------------------->
 
 <!-- AUTO OPEN MODEL FUNCTION -->
-<script>
+<!-- <script>
   
   setTimeout(function() {
-    // $('#form__model').modal();
+    $('#form__model').modal();
 }, 15000);
- </script>
+ </script> -->
 
 
 
-<!-- MODEL FORM  -->
+<!-- FORM MODAL -->
 
 
-   <div class="modal fade " id="form__model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal fade" id="form__model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
    
     <div class="modal-dialog" role="document">
      
@@ -1062,60 +1066,53 @@ We put forward end-to-end pest management services with cost-effective and Profe
         <div class="modal-body " >
       
          <div class="col-9 col-md-8 col-lg-7  "
-          id='home__getTouch__form__div'>
+          id='modal__form__div'>
 
           <div id='home__getTouch__form'>
 
-            <form >
-              <div id='home__getTouch__form__input__div'>
-                <label for="name" style="margin-top: 20px;">Name <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="name" />
-              </div>
-              <div id='home__getTouch__form__input__div'>
-                <label id='label for name'>Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="contact" />
-              </div>
-              <div id='home__getTouch__form__input__div'>
-                <label id='label for name'>Email </label>
-                <input type="email" name="email" />
-              </div>
-              <div id='home__getTouch__form__input__div'>
-                <label id='label for name'>Location <span style="color:rgba(255,0,0,1);">*</span></label>
-                <input name="location" />
-              </div>
-              <div id='home__getTouch__form__input__div'>
-                <label id='label for name'>Services </label>
-                <input list="select" name="services" id='services__input' />
+           
 
-                <datalist class="form-control" id="select">
-                  <option value="RODENT CONTROL">
-                  <option value="TERMITE CONTROL">
-                  <option value="BUDBUG CONTROL">
-                  <option value="BIRDS CONTROL">
-                  <option value="INSECT CONTROL">
-                  <option value="ANT CONTROL">
+          <form id="submit-forms-modal">
+            <div id='modal__form__input__div'>
+              <label for="name">Name <span style="color:rgba(255,0,0,1);">*</span></label>
+              <input required id="name"  type="text" name="name" />
+            </div>
+            <div id='modal__form__input__div'>
+              <label for="contact">Contact Number <span style="color:rgba(255,0,0,1);">*</span></label>
+              <input id="phone"   type="text" name="phone" />
+            </div>
+            <div id='modal__form__input__div''>
+              <label for="email">Email </label>
+              <input id="email" type="email" name="email" />
+            </div>
+            <div id='modal__form__input__div'>
+              <label for="location">Location <span style="color:rgba(255,0,0,1);">*</span></label>
+              <input   type="text" name="location" />
+            </div>
+            <div id='modal__form__input__div'>
+              <label for="service">Services </label>
+              <input itemid="service" list="select" name="service" id='services__input' />
 
-                  <option value="WASPS CONTROL">
-                  <option value="FUMIGATION">
-                  <option value="FLY CONTROL">
-                  <option value="COCKROACH CONTROL">
+              <datalist class="form-control" id="select">
+                <option value="RODENT CONTROL">
+                <option value="TERMITE CONTROL">
+                <option value="BUDBUG CONTROL">
+                <option value="BIRDS CONTROL">
+                <option value="INSECT CONTROL">
+                <option value="ANT CONTROL">
 
-
-
-                </datalist>
-
-              </div>
-
-              <div id="home__getTouch__button__div">
-
-                <button type="submit" id='submit__button'>SUBMIT</button>
-              </div>
-
+                <option value="WASPS CONTROL">
+                <option value="FUMIGATION">
+                <option value="FLY CONTROL">
+                <option value="COCKROACH CONTROL">
+            </datalist>
           </div>
+            </div>
+        <div id="modal__button__div">
+          <button type="submit" >SUBMIT</button>
+        </div>
 
-
-
-          </form>
+      </form>
           </div> 
         </div>
       
@@ -1123,21 +1120,23 @@ We put forward end-to-end pest management services with cost-effective and Profe
     </div>
   
 
-</div>
-
-</body>
+</div> 
 
 
 
 
 
+
+
+ 
 
 <script src="jquary\script.js"></script>
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>  -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -1145,7 +1144,73 @@ We put forward end-to-end pest management services with cost-effective and Profe
 
 
 
+
+
+ <script>
+  $("#submit-forms").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa/exec",
+            data:$("#submit-forms").serialize(),
+          method:"post",
+          success:function (response){
+              // alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert('ERROR')
+
+          }
+      })
+  })
+</script>
+
+<script>
+  $("#submit-forms-modal").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa/exec",          data:$("#submit-forms").serialize(),
+          method:"post",
+          success:function (response){
+              // alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+<script>
+  $("#submit-forms-2").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa/exec",
+          data:$("#submit-forms").serialize(),
+          method:"post",
+          success:function (response){
+              // alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+ 
 </body>
 
 
 </html>
+
+
+
+<!-- AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa -->
+
+<!-- https://script.google.com/macros/s/AKfycbzjkEmSPmiBCFexfNqQVqONjNEY_ao-0YIqNuIzB7Xbcd4fNlaVYduRx6U-gMiemhLa/exec -->
