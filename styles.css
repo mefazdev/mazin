@@ -609,12 +609,14 @@ padding-top: 10px;
   color: #ffffff;
   opacity: 1;
   line-height: 29px;
+
   /* margin-bottom: 40px; */
   text-align: justify;
 }
 #home__security__text__arab {
   max-width: 80%;
   margin: auto;
+  font-family: 'Noto Naskh Arabic', serif;
   /* margin-top: 30px; */
 }
 #home__security__text__arab p {
@@ -623,7 +625,7 @@ padding-top: 10px;
   color: #ffffff;
   opacity: 1;
   line-height: 29px;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 40px;
   /* text-align: justify; */
 }
@@ -640,6 +642,24 @@ padding-top: 10px;
   }
 }
 @media screen and (max-width: 568px) {
+  #home__security__text__arab {
+    max-width: 100%;
+    margin: auto;
+    /* margin-top: 30px; */
+  }
+  #home__security__text__arab p {
+    /* text-align: right; */
+    letter-spacing: 1px;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 29px;
+    /* font-size: 45px; */
+    margin-bottom: 20px;
+    /* text-align: justify; */
+    /* font-family: 'Noto Naskh Arabic', serif; */
+    /* font-family:; */
+    /* border: solid red; */
+  }
   #home__security__section {
     margin-top: 70px;
   }
@@ -648,8 +668,12 @@ padding-top: 10px;
     max-height: 90px;
     padding: 10px;
   }
-  #home__security__section p {
+  #home__security__text__row{
     font: normal normal normal 14px/25px Poppins;
+    /* justify-content: left; */
+  }
+  #home__security__text__arab p {
+    font: normal normal normal 16px/25px Poppins;
   }
   #home__security__text__row {
     max-width: 100%;
@@ -668,33 +692,46 @@ padding-top: 10px;
 /* <<<<<<<<<<<<<<<<<< HOME SESRVICES >>>>>>>>>>>>>>>>>>> */
 #home__service__container {
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 100px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+}
+#home__service__container h2 {
+  
+  text-align: center;
+
 }
 
 #home__service__first__Row {
   margin-top: 50px;
   justify-content: space-between;
-  background-color: #daeaf3;
+   /* background-color: #ffffff; */
+  background-color: #daeaf349;
   padding-bottom: 60px;
   position: relative;
 }
 #home__service__second__row{
-  background-color: #daeaf3;
+  /* background-color: #daeaf3; */
   justify-content: space-between;
 }
 @media screen and (max-width: 568px) {
   #home__service__container {
     margin-top: 70px;
+    max-width: 90%;
   }
   #home__service__head {
     font-weight: 700;
     font-size: 27px;
   }
-  #home__service__img__div h6 {
+  #home__service__img__div h2 {
     font-size: 14px;
     font-weight: 600;
+  
+    margin-top: 10px;
+    text-align: center;
+  }
+  #home__service__img__div img{
+    /* margin: auto; */
   }
   #home__service__first__Row {
     margin-top: 0px;
@@ -713,9 +750,11 @@ padding-top: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: auto;
   margin-top: 30px;
   font-family: Poppins;
  
+ /* border: saddlebrown solid; */
  
 }
 #home__service__img__div:hover{
@@ -728,40 +767,51 @@ padding-top: 10px;
 
 }
 #home__service__img__div img {
+
+  /* border: solid green; */
   /* max-width: 150px; */
   /* width: 150px;
   height: 130px; */
   /* height: 60%;
   width: 60%; */
-  /* margin: auto; */
+  margin: auto;
   border-radius: 100%;
-  max-width: 150px;
+  /* height: 120px;
+  width: 150px; */
+  max-width: 170px;
   /* border: solid red; */
 }
-.service__img__div{
-  /* border: saddlebrown solid;
-  width: 100px;
-  height: 100px;
-  overflow: hidden; */
+
+.service__row{
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  font-family: Poppins ;
+  font-size: 14px;
+  color: rgb(77, 75, 75);
+  /* border: solid green; */
+ text-align:left;
+ 
 }
-.home__service__desc li{
+.service__row p{
   font-family: Poppins ;
   font-size: 14px;
   margin:inherit;
-  /* border: saddlebrown solid; */
-  padding: 0px;
-  color: rgb(77, 75, 75);
-  /* text-align: left;
-  margin: auto; */
-  /* max-width: 100px; */
-  /* margin-left: -10px; */
+  margin-left: 5px;
+
+
+
 }
 .home__service__desc{
-  width: fit-content;
-  /* border: solid green; */
-  text-align: left;
-  /* max-width: 70%; */
+  max-width: fit-content;
   margin: auto;
+  /* margin-left: 10px; */
+  /* border: solid green; */
+}
+@media screen and (max-width: 568px) {
+  .home__service__desc{
+    display: none;
+  }
 }
 .home__service__more{
   position: absolute;
@@ -779,10 +829,12 @@ padding-top: 10px;
 color: rgb(222, 219, 219);
 }
 @media screen and (min-width: 568px) {
-  #home__service__img__div h6 {
+  #home__service__img__div h2 {
     font-size: 14px;
     font-weight: 600;
     margin-top: 10px;
+    text-align: center;
+    /* border: solid red; */
     /* font-weight: 500; */
   }
 }
@@ -933,7 +985,7 @@ text-align: justify;
   text-align: center;
 }
 
-#home__schedule__container h1 {
+#home__schedule__container h2 {
   font: normal normal normal 35px/35px Poppins;
   font-weight: 800;
   color: #ffffff;
@@ -1013,7 +1065,7 @@ text-align: justify;
   #home__schedule__container {
     margin-top: 70px;
   }
-  #home__schedule__container h1 {
+  #home__schedule__container h2 {
     font: normal normal normal 25px/30px Poppins;
     font-weight: 900;
     padding-top: 30px;
@@ -1995,7 +2047,7 @@ text-align: justify;
 
 #service__row{
   /* border: saddlebrown solid; */
-  background-color: #daeaf3;
+  background-color: #daeaf349;
   padding-bottom: 20px;
 }
 #service__img__div {
@@ -3111,3 +3163,14 @@ letter-spacing: 1px;
 }
 
  
+
+
+/* 
+Ants, Rats, Spider and any insects control services.
+ 
+Best Pest Control Services in Dubai (Best Price Pest Control Services)Call Now.
+
+Pest Control in kalba &sharjah 
+Bird Control ·Rat Control ·Mosquito Control
+ 
+*/
